@@ -1,0 +1,88 @@
+.stats-container {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: #232526;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(52, 58, 64, 0.13);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.stats-title {
+  text-align: center;
+  color: #ffb347;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #353a40;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(52, 58, 64, 0.09);
+}
+
+.stats-table th, .stats-table td {
+  padding: 0.85rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid #414345;
+}
+
+.stats-table th {
+  background: #414345;
+  color: #ffb347;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.stats-table tr:last-child td {
+  border-bottom: none;
+}
+
+.stats-table tr:hover {
+  background: #2c2f33;
+  transition: background 0.2s;
+}
+
+.stats-link {
+  color: #ffb347;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.stats-link:hover {
+  color: #fff;
+}
+
+.stats-original {
+  word-break: break-all;
+  max-width: 250px;
+}
+
+.stats-empty {
+  margin-top: 2rem;
+  text-align: center;
+  color: #ffb347;
+  font-size: 1.15rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97);}
+  to { opacity: 1; transform: scale(1);}
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fade-in {
+  animation: fadeIn 0.7s ease;
+}
+.animate-slide-up {
+  animation: slideUp 0.7s cubic-bezier(.42,.65,.27,.99);
+}

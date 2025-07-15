@@ -1,0 +1,112 @@
+.home-container {
+  max-width: 500px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: #232526;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(52, 58, 64, 0.13);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.welcome-card {
+  background: linear-gradient(90deg, #414345 0%, #232526 100%);
+  padding: 1.5rem;
+  border-radius: 14px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px rgba(52, 58, 64, 0.09);
+  text-align: center;
+}
+
+.welcome-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #ffb347;
+  letter-spacing: 1px;
+}
+
+.welcome-card p {
+  font-size: 1.08rem;
+  color: #e0e0e0;
+}
+
+.shorten-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background: #353a40;
+  color: #fff;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(52, 58, 64, 0.07);
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffb347;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #ffb347 0%, #ffcc80 100%);
+  color: #232526;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-success:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-success:hover:not(:disabled) {
+  background: linear-gradient(90deg, #ffcc80 0%, #ffb347 100%);
+  transform: scale(1.04);
+}
+
+.result-card {
+  background: #353a40;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(52, 58, 64, 0.11);
+}
+
+.result-card a {
+  color: #ffb347;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.result-card a:hover {
+  color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97);}
+  to { opacity: 1; transform: scale(1);}
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fade-in {
+  animation: fadeIn 0.7s ease;
+}
+.animate-slide-up {
+  animation: slideUp 0.7s cubic-bezier(.42,.65,.27,.99);
+}

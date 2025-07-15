@@ -1,0 +1,60 @@
+.navbar-afford {
+  background: linear-gradient(90deg, #343a40 60%, #495057 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(52, 58, 64, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.2s;
+}
+
+.navbar-logo:hover {
+  color: #ffc107;
+  text-shadow: 0 2px 8px #343a40;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.2s, transform 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-btn:hover,
+.navbar-btn.active {
+  background: #ffc107;
+  color: #343a40;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.15);
+}
+
+.navbar-btn:active {
+  transform: scale(0.98);
+}
