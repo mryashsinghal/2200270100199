@@ -46,8 +46,6 @@ root/
 
 ## Screenshots
 
-> Replace these placeholders with your actual images (store in a `/screenshots/` folder or use direct image links)
-
 ###  Home Page
 ![Home Page](./screenshots/home.png)
 
@@ -79,13 +77,12 @@ root/
 ### 3. `/logger`
 
 - Reusable function:
-  ```js
+```
   Log(stack, level, package, message);
 ```
+- Example
 
-* Example:
-
-  ```js
+  ```
   Log("backend", "error", "controller", "Invalid long URL provided");
   ```
 
